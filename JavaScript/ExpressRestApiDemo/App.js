@@ -3,7 +3,13 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  
+    const olio = {
+        nimi: "Matti Möttönen",
+        puhelin: "050 111 2222"
+    }
+
+    res.json(olio);
 })
 
 app.listen(port, () => {
