@@ -1,0 +1,9 @@
+<Asiakkaat>
+    <Asiakas>
+        <Nimi>Antti Asiakas</Nimi>
+        <Osoite>
+            <Katuosoite>Kotikatu 12</Katuosoite>
+            <Postinumero>90640</Postinumero>
+        </Osoite>
+    </Asiakas>
+</Asiakkaat>
