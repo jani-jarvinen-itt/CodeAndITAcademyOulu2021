@@ -11,8 +11,20 @@ namespace RestApiDemo.Controllers
     [Route("[controller]")]
     public class OmaController : ControllerBase
     {
-        public int Luku() {
+        [HttpGet]
+        [HttpPost]
+        [Route("numero")]
+        [Route("testi")]
+        public int Luku()
+        {
             return 123;
+        }
+
+        [HttpPost]
+        [Route("merkkijono")]
+        public string Teksti()
+        {
+            return "ABCDEF";
         }
     }
 }
