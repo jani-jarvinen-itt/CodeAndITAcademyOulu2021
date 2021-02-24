@@ -1,3 +1,17 @@
 DotNet/RestApiDemo/.vscode/
 DotNet/RestApiDemo/bin/
 DotNet/RestApiDemo/obj/
+/DotNet/ArvaaLukuPeli/.vs/ArvaaLukuPeli/v16
+/DotNet/ArvaaLukuPeli/ArvaaLukuPeli/bin/Debug/netcoreapp3.1
+/DotNet/ArvaaLukuPeli/ArvaaLukuPeli/obj
+/DotNet/CtsDemo/CtsDemoApp/.vs/CtsDemoApp/v16
+/DotNet/CtsDemo/CtsDemoApp/CtsDemoApp/bin/Debug
+/DotNet/CtsDemo/CtsDemoApp/CtsDemoApp/obj/Debug
+/DotNet/CtsDemo/CtsDemoApp/VisualBasicKirjasto/bin/Debug
+/DotNet/CtsDemo/CtsDemoApp/VisualBasicKirjasto/obj/Debug
+/DotNet/HelloWorld/.vscode
+/DotNet/HelloWorld/bin/Debug/net5.0
+/DotNet/HelloWorld/obj
+/DotNet/HelloWorld2/.vs/HelloWorld2
+/DotNet/HelloWorld2/HelloWorld2/bin/Debug/netcoreapp3.1
+/DotNet/HelloWorld2/HelloWorld2/obj
