@@ -29,20 +29,21 @@ namespace SäätiedotDemo
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.kaupunkiTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lisääButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.valitutListBox = new System.Windows.Forms.ListBox();
+            this.tuloksetTextBox = new System.Windows.Forms.TextBox();
+            this.haeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // kaupunkiTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(206, 20);
-            this.textBox1.TabIndex = 0;
+            this.kaupunkiTextBox.Location = new System.Drawing.Point(12, 29);
+            this.kaupunkiTextBox.Name = "kaupunkiTextBox";
+            this.kaupunkiTextBox.Size = new System.Drawing.Size(206, 20);
+            this.kaupunkiTextBox.TabIndex = 0;
             // 
             // label1
             // 
@@ -53,14 +54,15 @@ namespace SäätiedotDemo
             this.label1.TabIndex = 1;
             this.label1.Text = "Käupungin nimi:";
             // 
-            // button1
+            // lisääButton
             // 
-            this.button1.Location = new System.Drawing.Point(12, 56);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Lisää";
-            this.button1.UseVisualStyleBackColor = true;
+            this.lisääButton.Location = new System.Drawing.Point(12, 56);
+            this.lisääButton.Name = "lisääButton";
+            this.lisääButton.Size = new System.Drawing.Size(105, 23);
+            this.lisääButton.TabIndex = 2;
+            this.lisääButton.Text = "Lisää";
+            this.lisääButton.UseVisualStyleBackColor = true;
+            this.lisääButton.Click += new System.EventHandler(this.lisääButton_Click);
             // 
             // label2
             // 
@@ -71,34 +73,45 @@ namespace SäätiedotDemo
             this.label2.TabIndex = 3;
             this.label2.Text = "Valitut kaupungit:";
             // 
-            // listBox1
+            // valitutListBox
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(16, 122);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(202, 160);
-            this.listBox1.TabIndex = 4;
+            this.valitutListBox.FormattingEnabled = true;
+            this.valitutListBox.Location = new System.Drawing.Point(16, 122);
+            this.valitutListBox.Name = "valitutListBox";
+            this.valitutListBox.Size = new System.Drawing.Size(202, 160);
+            this.valitutListBox.TabIndex = 4;
             // 
-            // textBox2
+            // tuloksetTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(238, 29);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(279, 253);
-            this.textBox2.TabIndex = 5;
+            this.tuloksetTextBox.Location = new System.Drawing.Point(238, 29);
+            this.tuloksetTextBox.Multiline = true;
+            this.tuloksetTextBox.Name = "tuloksetTextBox";
+            this.tuloksetTextBox.ReadOnly = true;
+            this.tuloksetTextBox.Size = new System.Drawing.Size(279, 224);
+            this.tuloksetTextBox.TabIndex = 5;
+            // 
+            // haeButton
+            // 
+            this.haeButton.Location = new System.Drawing.Point(238, 259);
+            this.haeButton.Name = "haeButton";
+            this.haeButton.Size = new System.Drawing.Size(117, 23);
+            this.haeButton.TabIndex = 6;
+            this.haeButton.Text = "Hae säätiedot";
+            this.haeButton.UseVisualStyleBackColor = true;
+            this.haeButton.Click += new System.EventHandler(this.haeButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(529, 287);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.haeButton);
+            this.Controls.Add(this.tuloksetTextBox);
+            this.Controls.Add(this.valitutListBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lisääButton);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.kaupunkiTextBox);
             this.Name = "Form1";
             this.Text = "Säätiedot v. 1.0";
             this.ResumeLayout(false);
@@ -108,12 +121,13 @@ namespace SäätiedotDemo
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox kaupunkiTextBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button lisääButton;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ListBox valitutListBox;
+        private System.Windows.Forms.TextBox tuloksetTextBox;
+        private System.Windows.Forms.Button haeButton;
     }
 }
 
