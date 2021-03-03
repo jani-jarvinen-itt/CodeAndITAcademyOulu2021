@@ -1,0 +1,11 @@
+﻿Entity-mallin luonti
+--------------------
+
+1. Asenna NuGet-paketit:
+
+	- Microsoft.EntityFrameworkCore.SqlServer
+	- Microsoft.EntityFrameworkCore.Tools
+
+2. Aja Package Manager Consolessa:
+
+   Scaffold-DbContext "Server=localhost\SQLEXPRESS;Database=Northwind;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models

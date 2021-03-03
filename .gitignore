@@ -45,3 +45,7 @@ DotNet/RestApiDemo/obj/
 /DotNet/EntityFrameworkDemo/bin/Debug/net5.0
 /DotNet/EntityFrameworkDemo/obj
 /DotNet/LinqDemo/.vs/LinqDemo
+/DotNet/EntityFrameworkDemo/.vs/EntityFrameworkDemo/DesignTimeBuild
+/DotNet/NorthwindEFDemo/.vs/NorthwindEFDemo/v16
+/DotNet/NorthwindEFDemo/NorthwindEFDemo/bin/Debug/netcoreapp3.1
+/DotNet/NorthwindEFDemo/NorthwindEFDemo/obj
