@@ -53,6 +53,15 @@ namespace LinqDemo
                 new OmaLuokka() { Luku = 103, Nimi = "Pena", Kaupunki = "Ivalo" },
                 new OmaLuokka() { Luku = 104, Nimi = "Liisa", Kaupunki = "Helsinki" },
             };
+
+            // tehtävä: etsi Oulussa olevat henkilöt
+            var tulokset = from o in oliot
+                           where o.Kaupunki == "Oulu"
+                           select o;
+
+            foreach (OmaLuokka l in tulokset) {
+                Console.WriteLine(l.Nimi);
+            }
         }
     }
 }
