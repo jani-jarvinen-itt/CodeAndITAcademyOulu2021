@@ -39,3 +39,5 @@ DotNet/RestApiDemo/obj/
 /DotNet/WpfDemo/.vs/WpfDemo/v16
 /DotNet/WpfDemo/WpfDemo/bin/Debug
 /DotNet/WpfDemo/WpfDemo/obj/Debug
+/DotNet/LinqDemo/bin/Debug/net5.0
+/DotNet/LinqDemo/obj
