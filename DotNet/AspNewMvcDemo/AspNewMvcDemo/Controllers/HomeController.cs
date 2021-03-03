@@ -1,4 +1,5 @@
-﻿using AspNewMvcDemo.Models;
+﻿using AspNewMvcDemo.Database;
+using AspNewMvcDemo.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -20,8 +21,9 @@ namespace AspNewMvcDemo.Controllers
 
         public IActionResult Index()
         {
-            ViewBag.Luku1 = 1200;
-            ViewBag.Nimi = "Möttönen";
+            NorthwindContext konteksti = new();
+            List<Customer> asiakkaat = konteksti.Customers.ToList();
+            ViewBag.Asiakkaat = asiakkaat;
 
             return View();
         }
