@@ -10,6 +10,9 @@ namespace LinqDemo
         {
             Console.WriteLine("Hello World!");
 
+            ListanKäsittely();
+
+            /*
             int[] luvut = { 5, 3, 10, 8, 4, 1, 9, 7, 2, 11 };
 
             // tehtävä: etsi viittä suuremmat luvut ja tulosta ne numerojärjestyksessä
@@ -22,6 +25,7 @@ namespace LinqDemo
             {
                 Console.WriteLine(tulos);
             }
+            */
 
             /*
             // tehtävä: etsi viittä suuremmat luvut ja tulosta ne numerojärjestyksessä
@@ -37,6 +41,18 @@ namespace LinqDemo
                 Console.WriteLine(tulos);
             }
             */
+        }
+
+        private static void ListanKäsittely()
+        {
+            List<OmaLuokka> oliot = new List<OmaLuokka>()
+            {
+                new OmaLuokka() { Luku = 100, Nimi = "Matti", Kaupunki = "Oulu" },
+                new OmaLuokka() { Luku = 101, Nimi = "Maija", Kaupunki = "Oulu" },
+                new OmaLuokka() { Luku = 102, Nimi = "Keke", Kaupunki = "Kempele" },
+                new OmaLuokka() { Luku = 103, Nimi = "Pena", Kaupunki = "Ivalo" },
+                new OmaLuokka() { Luku = 104, Nimi = "Liisa", Kaupunki = "Helsinki" },
+            };
         }
     }
 }
