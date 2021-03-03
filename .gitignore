@@ -49,3 +49,6 @@ DotNet/RestApiDemo/obj/
 /DotNet/NorthwindEFDemo/.vs/NorthwindEFDemo/v16
 /DotNet/NorthwindEFDemo/NorthwindEFDemo/bin/Debug/netcoreapp3.1
 /DotNet/NorthwindEFDemo/NorthwindEFDemo/obj
+/DotNet/AspNewMvcDemo/.vs/AspNewMvcDemo
+/DotNet/AspNewMvcDemo/AspNewMvcDemo/bin/Debug/net5.0
+/DotNet/AspNewMvcDemo/AspNewMvcDemo/obj
