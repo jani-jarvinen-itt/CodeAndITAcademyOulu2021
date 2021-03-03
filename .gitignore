@@ -41,3 +41,7 @@ DotNet/RestApiDemo/obj/
 /DotNet/WpfDemo/WpfDemo/obj/Debug
 /DotNet/LinqDemo/bin/Debug/net5.0
 /DotNet/LinqDemo/obj
+/DotNet/EntityFrameworkDemo/.vs/EntityFrameworkDemo/v16
+/DotNet/EntityFrameworkDemo/bin/Debug/net5.0
+/DotNet/EntityFrameworkDemo/obj
+/DotNet/LinqDemo/.vs/LinqDemo
