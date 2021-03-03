@@ -19,6 +19,17 @@
                 <th>Maa</th>
             </tr>
         </thead>
+        <tbody>
+            @foreach (AspNewMvcDemo.Database.Customer asiakas in ViewBag.Asiakkaat)
+            {
+                <tr>
+                    <td>@asiakas.CustomerId</td>
+                    <td>@asiakas.CompanyName</td>
+                    <td>@asiakas.City</td>
+                    <td>@asiakas.Country</td>
+                </tr>
+            }
+        </tbody>
     </table>
 
 
