@@ -55,11 +55,22 @@ namespace LinqDemo
             };
 
             // tehtävä: etsi Oulussa olevat henkilöt
-            var tulokset = from o in oliot
-                           where o.Kaupunki == "Oulu"
-                           select o;
+            // LINQ-kyselysyntaksi
+            IEnumerable<OmaLuokka> tulokset = from o in oliot
+                                              where o.Kaupunki == "Oulu"
+                                              select o;
 
-            foreach (OmaLuokka l in tulokset) {
+            // LINQ-metodisyntaksi
+            IEnumerable<OmaLuokka> tulokset2 =
+                oliot.Where(o => o.Kaupunki == "Oulu");
+
+            foreach (OmaLuokka l in tulokset)
+            {
+                Console.WriteLine(l.Nimi);
+            }
+
+            foreach (OmaLuokka l in tulokset2)
+            {
                 Console.WriteLine(l.Nimi);
             }
         }
