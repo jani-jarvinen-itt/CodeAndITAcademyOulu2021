@@ -7,4 +7,16 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 
     <button class="btn btn-primary mt-5" onclick="javascript: alert('Moi!');">Klikkaa tästä!</button>
+
+    <p>
+        @ViewBag.Luku1
+    </p>
+    <p>
+        @ViewBag.Nimi
+    </p>
+
+    @for (int i = 0; i < 10; i++)
+    {
+        <p>@i</p>
+    }
 </div>

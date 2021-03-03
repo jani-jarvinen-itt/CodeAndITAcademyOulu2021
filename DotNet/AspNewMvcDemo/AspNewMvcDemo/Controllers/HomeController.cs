@@ -20,6 +20,9 @@ namespace AspNewMvcDemo.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.Luku1 = 1200;
+            ViewBag.Nimi = "Möttönen";
+
             return View();
         }
 
